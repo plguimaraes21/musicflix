@@ -1,0 +1,108 @@
+:root {
+  --gray: #635e5e;
+  --green: #9af523;
+  --white: #e6e6e6d8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*BASICS ELEMENTS */
+body {
+  background: var(--gray);
+  color: white;
+  font-family: 'Arial', Times, serif;
+}
+
+header .container {
+  background: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+header .logo {
+  color: var(--green);
+  font-family: 'Arial gray';
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--white);
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #efff;
+}
+
+/* MAIN music */
+.main-music {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.178)100%), url('/img/anitta.webp');
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-music .description {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.title {
+  margin-top: 10%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.button {
+  background-color: rgba(0, 0, 1, 0.5);
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.button:hover {
+  background-color: white;
+  color: gray;
+}
+
+.button i {
+  margin-right: 8px;
+}
+
+.container {
+  margin: 0 15px 0 15px;
+}
+
+.main-music .container {
+  width: 60%;
+}
+
+.box-music {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.musics-carousel {
+  margin-top: 5px;
+}
